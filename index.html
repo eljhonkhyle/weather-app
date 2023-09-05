@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/d4d2fdaaad.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-header">
+        <form class="weather-search">
+          <input
+            type="text"
+            placeholder="Search for a city.."
+            class="weather-search"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="weather-units">
+            <span class="weather-unit-celsius">&#176C</span>
+            <span class="weather-unit-farenheight">&#176F</span>
+        </div>
+      </div>
+      <div class="weather-body">
+        <h1 class="weather-city">London, UK</h1>
+        <div class="weather-datetime">
+            <p>Monday 14 March 2023 1:31 AM</p>
+        </div>
+        <div class="weather-forecast">
+            <p>Clear</p>
+        </div>
+        <div class="weather-icon">
+            <img src="http://openweathermap.org/img/wn/10d@4x.png"/>
+        </div>
+        <p class="weather-temperature">
+            18&#176
+        </p>
+        <div class="weather-minmax">
+            <p>Min: 12&#176</p>
+            <p>Max: 16&#176</p>
+        </div>
+      </div>
+
+      <div class="weather-info">
+        <div class="weather-card">
+            <i class="fa-solid fa-temperature-full"></i>
+            <div>
+                <p>Real Feel</p>
+                <p class="weather-realfeel">18&#176</p>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <i class="fa-solid fa-droplet"></i>
+            <div>
+                <p>Humidity</p>
+                <p class="weather-humitidy">18&#176</p>
+            </div>
+        </div>
+        
+      
+      <div class="weather-card">
+        <i class="fa-solid fa-wind"></i>
+        <div>
+            <p>Wind</p>
+            <p class="weather-wind">18&#176</p>
+        </div>
+      </div>
+
+      <div class="weather-card">
+        <i class="fa-solid fa-gauge-high"></i>
+        <div>
+            <p>Pressure</p>
+            <p class="weather-gauge">18&#176</p>
+        </div>
+    </div>
+    
+    </div>
+      </div>
+    </div>
+  </body>
+</html>
