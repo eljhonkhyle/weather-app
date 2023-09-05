@@ -8,6 +8,14 @@
     background-color: #1e1e1e;
 }
 
+
+.logo{
+    padding: 2%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
     color: #fff;
     padding: 2rem;
@@ -70,10 +78,14 @@ input::placeholder {
 }
 
 .weather-forecast {
-    background: #1e1e1e;
+    background: #171717;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 30px;
+}
+.weather-forecast p{
+    background: #171717;
+    
 }
 
 .weather-icon img {
@@ -95,15 +107,18 @@ input::placeholder {
 }
 
 .weather-info {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-top: 4rem;
+  
 }
 
 .weather-card {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: #1e1e1e;
+    background: #171717;
     padding: 1rem;
     border-radius: 10px;
 }
@@ -115,6 +130,7 @@ input::placeholder {
 
 .weather-card p {
     font-size: 14px;
+    background: #171717;
 }
 
 @media(max-width: 936px){
