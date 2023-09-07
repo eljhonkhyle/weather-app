@@ -1,18 +1,18 @@
 // state
-let currCity = "London";
+let currCity = "Poblacion";
 let units = "metric";
 
 // Selectors
 let city = document.querySelector(".weather-city");
 let dateTime = document.querySelector(".weather-datetime");
-let weatherForecast = document.querySelector('.weather-forecast');
+let weatherForecast = document.querySelector(".weather-forecast");
 let weatherTemperature = document.querySelector(".weather-temperature");
 let weatherIcon = document.querySelector(".weather-icon");
 let weatherMinmax = document.querySelector(".weather-minmax")
-let weatherRealfeel = document.querySelector('.weather-realfeel');
-let weatherHumidity = document.querySelector('.weather-humidity');
-let weatherWind = document.querySelector('.weather-wind');
-let weatherPressure = document.querySelector('.weather-pressure');
+let weatherRealfeel = document.querySelector(".weather-realfeel");
+let weatherHumidity = document.querySelector(".weather-humidity");
+let weatherWind = document.querySelector(".weather-wind");
+let weatherPressure = document.querySelector(".weather-pressure");
 
 // search
 document.querySelector(".weather-search").addEventListener('submit', e => {
@@ -76,8 +76,9 @@ function convertCountryCode(country){
 function getWeather(){
     const API_KEY = '9c1f6de9d01a67b86520f9f60c0a14b7'
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API_KEY}&units=${units}`).then(res => res.json()).then(data => 
-    {city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API_KEY}&units=${units}`).then(res => res.json()).then(data => {
+    (data)
+    city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`
     dateTime.innerHTML = convertTimeStamp(data.dt, data.timezone); 
     weatherForecast.innerHTML = `<p>${data.weather[0].main}`
     weatherTemperature.innerHTML = `${data.main.temp.toFixed()}&#176`

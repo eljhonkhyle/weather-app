@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Hub</title>
-    <script src="https://kit.fontawesome.com/d4d2fdaaad.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
   </head>
   <body>
     <div class="logo">
@@ -19,29 +17,30 @@
           <input
             type="text"
             placeholder="Search for a city.."
-            class="weather-search"
+            class="weather-searchform"
           />
           <i class="fa-solid fa-magnifying-glass"></i>
         </form>
+        
         <div class="weather-units">
             <span class="weather-unit-celsius">&#176C</span>
             <span class="weather-unit-farenheight">&#176F</span>
         </div>
       </div>
+
       <div class="weather-body">
-        <h1 class="weather-city">London, UK</h1>
+        <h1 class="weather-city"></h1>
         <div class="weather-datetime">
-            <p>Tuesday 5 September 2023 11:24 PM</p>
         </div>
         <div class="weather-forecast">
-            <p>Clear</p>
         </div>
         <div class="weather-icon">
-            <img src="http://openweathermap.org/img/wn/10d@4x.png"/>
+           
         </div>
         <p class="weather-temperature">
-            18&#176
+            
         </p>
+
         <div class="weather-minmax">
             <p>Min: 12&#176</p>
             <p>Max: 16&#176</p>
@@ -61,7 +60,7 @@
             <i class="fa-solid fa-droplet"></i>
             <div>
                 <p>Humidity</p>
-                <p class="weather-humitidy">18&#176</p>
+                <p class="weather-humidity">18&#176</p>
             </div>
         </div>
         
@@ -78,12 +77,12 @@
         <i class="fa-solid fa-gauge-high"></i>
         <div>
             <p>Pressure</p>
-            <p class="weather-gauge">18&#176</p>
+            <p class="weather-pressure">18&#176</p>
         </div>
      </div>
-    
     </div>
       </div>
-    </div>
+    <script src="https://kit.fontawesome.com/d4d2fdaaad.js" crossorigin="anonymous"></script>    
+    <script src="index.js"></script>
   </body>
 </html>
