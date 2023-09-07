@@ -4,7 +4,7 @@ let units = "metric";
 
 // Selectors
 let city = document.querySelector(".weather-city");
-let datetime = document.querySelector(".weather-datetime");
+let dateTime = document.querySelector(".weather-datetime");
 let weatherForecast = document.querySelector('.weather-forecast');
 let weatherTemperature = document.querySelector(".weather-temperature");
 let weatherIcon = document.querySelector(".weather-icon");
@@ -78,7 +78,7 @@ function getWeather(){
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${currCity}&appid=${API_KEY}&units=${units}`).then(res => res.json()).then(data => 
     {city.innerHTML = `${data.name}, ${convertCountryCode(data.sys.country)}`
-    datetime.innerHTML = convertTimeStamp(data.dt, data.timezone); 
+    dateTime.innerHTML = convertTimeStamp(data.dt, data.timezone); 
     weatherForecast.innerHTML = `<p>${data.weather[0].main}`
     weatherTemperature.innerHTML = `${data.main.temp.toFixed()}&#176`
     weatherIcon.innerHTML = `   <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" />`
