@@ -9,13 +9,7 @@
 }
 
 
-.logo{
-    padding: 2rem;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .container {
     color: #fff;
     padding: 2rem;
@@ -24,6 +18,14 @@
     border-radius: 10px;
 }
 
+.logo{
+    padding: rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
 .weather-header {
     display: flex;
     justify-content: space-between;
