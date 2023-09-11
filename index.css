@@ -1,34 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #1e1e1e;
 }
 
 
 
-.container {
-    color: #fff;
-    padding: 2rem;
-    width: 40%;
-    margin: 4rem auto;
-    border-radius: 10px;
-}
 
-.logo{
-    padding: rem;
-    color: #fff;
+
+.logo {
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    
 }
+
+.darkmode {
+    padding: 2rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
 .weather-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -80,15 +81,11 @@ input::placeholder {
 }
 
 .weather-forecast {
-    background: #171717;
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 30px;
 }
-.weather-forecast p{
-    background: #171717;
-    
-}
+
 
 .weather-icon img {
     width: 100px;
@@ -110,9 +107,9 @@ input::placeholder {
 
 .weather-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   grid-gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   
 }
 
@@ -120,20 +117,16 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #171717;
     padding: 1rem;
-    border-radius: 10px;
 }
 
 .weather-card i {
     font-size: 1.5rem;
     margin-right: 1rem;
-    background: #171717;
 }
 
 .weather-card p {
     font-size: 14px;
-    background: #171717;
 }
 
 @media(max-width: 936px){
@@ -155,4 +148,5 @@ input::placeholder {
     .weather-info {
         grid-template-columns: none;
     }
+
 }
