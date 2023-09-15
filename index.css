@@ -8,14 +8,33 @@
 }
 
 .header {
-    padding: 3rem;
-    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-around;
-    cursor: pointer;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  
+  #moon {
+     cursor: pointer;
+     margin-left: 50%;
+     
+  }
+  
+  .logo h1{
+    font-size: 50px;
+    font-weight: bold;
+   
+  }
 
-}
+  p{
+    font-size: 11px;
+    font-weight: 100;
+    
 
+  }
 .weather-header {
     display: flex;
     justify-content: space-around;
@@ -104,8 +123,6 @@ input::placeholder {
   grid-gap: 3rem;
   margin-top: 50px;
   
-  
-  
 }
 
 .weather-card {
@@ -133,9 +150,30 @@ input::placeholder {
     font-size: 14px;
 }
 
+.footer{
+    margin-top: 3rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    color: #fff;
+    font-size: 13px;
+}
+
 @media(max-width: 936px){
     .container {
         width: 90%;
+        
+    }
+
+    #moon{
+        margin-bottom: 30px;
+        margin-left: 90px;
+    }
+
+    .weather-info {
+        grid-template-columns: none;
         
     }
 
@@ -146,10 +184,24 @@ input::placeholder {
     .weather-units {
         margin-top: 1rem;
     }
+
+    .footer{
+        font-size: 12px;
+    }
 }
 
 
 @media(max-width: 400px){
+
+    .logo{
+        margin-bottom: 3rem;
+        
+    }
+
+    #moon{
+        margin-bottom: 80px;
+        margin-left: 90px;
+    }
     .weather-info {
         grid-template-columns: none;
         
@@ -158,6 +210,10 @@ input::placeholder {
     .weather-card{
         margin-bottom: 0;
         
+    }
+
+    .footer{
+        font-size: 10px;
     }
 
 }
