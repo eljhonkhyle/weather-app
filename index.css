@@ -7,24 +7,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
-
-.logo {
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.darkmode {
-    padding: 2rem;
+.header {
+    padding: 3rem;
     font-size: 1.25rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     cursor: pointer;
+
 }
 
 .weather-header {
@@ -107,9 +96,12 @@ input::placeholder {
 
 .weather-info {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 2rem;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
   margin-top: 3rem;
+  height: 20vh;
+  
   
 }
 
@@ -117,7 +109,15 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    background: #171717;
+    outline: none;
+    color: #fff;
     padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    
 }
 
 .weather-card i {
@@ -147,6 +147,7 @@ input::placeholder {
 @media(max-width: 400px){
     .weather-info {
         grid-template-columns: none;
+        margin-top: 2rem;
     }
 
 }
