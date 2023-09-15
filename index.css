@@ -19,7 +19,6 @@
   
   #moon {
      cursor: pointer;
-     margin-left: 50%;
      
   }
   
@@ -39,6 +38,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 input {
@@ -56,6 +57,7 @@ input::placeholder {
 
 .weather-search {
     position: relative;
+    margin-left: 200px;
 }
 
 .weather-search i {
@@ -68,6 +70,7 @@ input::placeholder {
 
 .weather-units {
     font-size: 1.5rem;
+    margin-right: 220px;
 }
 
 .weather-units span {
@@ -122,6 +125,8 @@ input::placeholder {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   margin-top: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
   
 }
 
@@ -136,7 +141,7 @@ input::placeholder {
     padding: 1rem;
     border-radius: 10px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     margin-bottom: 2rem;
     
 }
@@ -161,10 +166,23 @@ input::placeholder {
     font-size: 13px;
 }
 
+
+@media(max-width: 1200px){
+  
+ .weather-info {
+        margin: 1rem;
+    }
+
+
 @media(max-width: 936px){
     .container {
         width: 90%;
         
+    }
+
+    .weather-search{
+        margin: 1rem;
+
     }
 
     #moon{
@@ -173,16 +191,17 @@ input::placeholder {
     }
 
     .weather-info {
-        grid-template-columns: none;
-        
+        margin: 1rem;
     }
 
     .weather-header {
         flex-direction: column;
+    
     }
 
     .weather-units {
         margin-top: 1rem;
+        margin-right: 1rem;
     }
 
     .footer{
@@ -193,13 +212,17 @@ input::placeholder {
 
 @media(max-width: 400px){
 
-    .logo{
-        margin-bottom: 3rem;
-        
+    
+    .weather-header{
+        justify-self: center;
+    }
+
+    .weather-units {
+        margin-right: 1rem;
     }
 
     #moon{
-        margin-bottom: 80px;
+        
         margin-left: 90px;
     }
     .weather-info {
@@ -216,4 +239,5 @@ input::placeholder {
         font-size: 10px;
     }
 
+}
 }
