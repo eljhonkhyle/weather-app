@@ -42,6 +42,14 @@
     margin-right: 5rem;
 }
 
+
+.illustrator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 1rem 60px 1rem;
+}
+
 input {
     border: none;
     background: #171717;
