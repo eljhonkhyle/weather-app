@@ -23,7 +23,7 @@ if(this.classList.toggle('bi-brightness-low-fill')){
 
 
 // state
-let currCity = "Poblacion";
+let currCity = "Manila";
 let units = "metric";
 
 // Selectors
