@@ -8,13 +8,13 @@ this.classList.toggle('bi-sun-fill')
 
 if(this.classList.toggle('bi-brightness-low-fill')){
     body.style.background = '#111111'
-    body.style.color = 'white'
+    body.style.color = '#FCFCFA'
     body.style.transition = '1s'
     
 }else{
     (this.classList.toggle('bi-brightness-high-fill'))
-    body.style.background = 'white'
-    body.style.color = '#111111'
+    body.style.background = '#FCFCFA'
+    body.style.color = '#17171F'
     body.style.transition = '1s'
 }
 
